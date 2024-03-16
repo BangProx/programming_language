@@ -1,0 +1,5 @@
+P           ([Pp][+-]?{D}+)
+((u|U)|(u|U)?(l|L|ll|LL)|(l|L|ll|LL)(u|U))
+0[xX]{H}+{P}{FS}?	{ count(); return(CONSTANT); }
+0[xX]{H}*"."{H}+{P}{FS}?     { count(); return(CONSTANT); }
+0[xX]{H}+"."{H}*{P}{FS}?     { count(); return(CONSTANT); }
